@@ -408,8 +408,8 @@ template {
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?ayvbgc");
-  src: url("../fonts/icomoon.eot?ayvbgc#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?ayvbgc") format("truetype"), url("../fonts/icomoon.woff?ayvbgc") format("woff"), url("../fonts/icomoon.svg?ayvbgc#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?paybzq");
+  src: url("../fonts/icomoon.eot?paybzq#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?paybzq") format("truetype"), url("../fonts/icomoon.woff?paybzq") format("woff"), url("../fonts/icomoon.svg?paybzq#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -428,6 +428,50 @@ template {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+
+.icon-facebook:before {
+  content: "\f09a";
+}
+
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+
+.icon-youtube-play:before {
+  content: "\f16a";
+}
+
+.icon-instagram:before {
+  content: "\f16d";
+}
+
+.icon-vk:before {
+  content: "\f189";
+}
+
+.icon-paper-plane:before {
+  content: "\f1d8";
+}
+
+.icon-send:before {
+  content: "\f1d8";
+}
+
+.icon-vimeo:before {
+  content: "\f27d";
+}
+
+.icon-telegram:before {
+  content: "\f2c6";
 }
 
 .icon-like:before {
@@ -3286,22 +3330,28 @@ figure {
   font-size: 1rem;
 }
 
+.social > li {
+  font-size: 2.8em;
+}
+
+.social > li:not(:last-child) {
+  margin-right: 1.07em;
+}
+
 .social > li:nth-child(1) {
   font-size: 3.3em;
   margin-right: 0.9em;
 }
 
-.social > li:nth-child(1) a:active svg {
+.social > li:nth-child(1) a {
+  text-shadow: 0.18em 0.18em 0px rgba(0, 161, 161, 0.7);
+}
+
+.social > li:nth-child(1) a:active {
   -webkit-transform: translateY(0.15em);
       -ms-transform: translateY(0.15em);
           transform: translateY(0.15em);
-  -webkit-filter: drop-shadow(1px 1px 0px rgba(0, 161, 161, 0.7));
-          filter: drop-shadow(1px 1px 0px rgba(0, 161, 161, 0.7));
-}
-
-.social > li:nth-child(1) svg {
-  -webkit-filter: drop-shadow(0.18em 0.18em 0px rgba(0, 161, 161, 0.7));
-          filter: drop-shadow(0.18em 0.18em 0px rgba(0, 161, 161, 0.7));
+  text-shadow: 1px 1px 0px rgba(0, 161, 161, 0.7);
 }
 
 .social > li:nth-child(2) {
@@ -3309,50 +3359,31 @@ figure {
   margin-right: 1.07em;
 }
 
-.social > li:nth-child(2) a:active svg {
+.social > li:nth-child(2) a {
+  text-shadow: 0.21em 0.21em 0px rgba(0, 161, 161, 0.7);
+}
+
+.social > li:nth-child(2) a:active {
   -webkit-transform: translateY(0.17em);
       -ms-transform: translateY(0.17em);
           transform: translateY(0.17em);
-  -webkit-filter: drop-shadow(1px 1px 0px rgba(0, 161, 161, 0.7));
-          filter: drop-shadow(1px 1px 0px rgba(0, 161, 161, 0.7));
-}
-
-.social > li:nth-child(2) svg {
-  -webkit-filter: drop-shadow(0.21em 0.21em 0px rgba(0, 161, 161, 0.7));
-          filter: drop-shadow(0.21em 0.21em 0px rgba(0, 161, 161, 0.7));
-}
-
-.social > li:nth-child(3) {
-  font-size: 4em;
-}
-
-.social > li:nth-child(3) a:active svg {
-  -webkit-transform: translateY(0.12em);
-      -ms-transform: translateY(0.12em);
-          transform: translateY(0.12em);
-  -webkit-filter: drop-shadow(1px 1px 0px rgba(0, 161, 161, 0.7));
-          filter: drop-shadow(1px 1px 0px rgba(0, 161, 161, 0.7));
-}
-
-.social > li:nth-child(3) svg {
-  -webkit-filter: drop-shadow(0.15em 0.15em 0px rgba(0, 161, 161, 0.7));
-          filter: drop-shadow(0.15em 0.15em 0px rgba(0, 161, 161, 0.7));
+  text-shadow: 1px 1px 0px rgba(0, 161, 161, 0.7);
 }
 
 .social > li a {
   color: #fff;
-  -webkit-transition: all 0s ease 0s !important;
-  -o-transition: all 0s ease 0s !important;
-  transition: all 0s ease 0s !important;
+  -webkit-transition: all 0.3s ease 0s !important;
+  -o-transition: all 0.3s ease 0s !important;
+  transition: all 0.3s ease 0s !important;
+  display: inline-block;
+  text-shadow: 0.21em 0.21em 0px rgba(0, 161, 161, 0.7);
 }
 
-.social > li svg {
-  -webkit-transition: -webkit-transform 0.3s ease 0s !important;
-  transition: -webkit-transform 0.3s ease 0s !important;
-  -o-transition: transform 0.3s ease 0s !important;
-  transition: transform 0.3s ease 0s !important;
-  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s !important;
-  display: block;
+.social > li a:active {
+  -webkit-transform: translateY(0.17em);
+      -ms-transform: translateY(0.17em);
+          transform: translateY(0.17em);
+  text-shadow: 1px 1px 0px rgba(0, 161, 161, 0.7);
 }
 
 .promo-header__body {
@@ -4004,7 +4035,7 @@ figure {
 .roadmap__column-title {
   font-family: "Kaushan Script", cursive;
   color: #F2CE46;
-  font-size: 60px;
+  font-size: 6rem;
   line-height: 1.45em;
   margin-bottom: 4rem;
 }
@@ -4335,6 +4366,12 @@ figure {
   }
 }
 
+@media (max-width: 1500px) {
+  html {
+    font-size: 8px;
+  }
+}
+
 @media (max-width: 1267.98px) {
   .container {
     width: calc(100% - 100px);
@@ -4370,6 +4407,10 @@ figure {
 }
 
 @media (max-width: 991.98px) {
+  html {
+    font-size: 10px;
+  }
+
   .container {
     width: calc(100% - 60px);
   }
@@ -4482,6 +4523,10 @@ figure {
   .footer__btn .btn {
     width: 100%;
     max-width: 340px;
+  }
+
+  .card:hover {
+    color: #fff;
   }
 
   .promo-header {

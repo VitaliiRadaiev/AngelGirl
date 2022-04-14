@@ -3,12 +3,18 @@
     background-color: $mainColor;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 101% 101%;
+    background-size: 101% 101%; 
     color: $lightColor;
     border-radius: 5rem;
     width: 41rem;
     padding: 3.5rem 3.4rem 5rem;
     text-align: center;
+
+    @media (max-width: $md2+px) {
+        &:hover {
+            color: #fff;
+        }
+    }
 
     @media (max-width: $md3+px) {
         border-radius: 20px;
