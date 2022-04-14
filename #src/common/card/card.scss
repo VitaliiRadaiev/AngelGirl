@@ -1,0 +1,42 @@
+.card {
+    display: block;
+    background-color: $mainColor;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 101% 101%;
+    color: $lightColor;
+    border-radius: 5rem;
+    width: 41rem;
+    padding: 3.5rem 3.4rem 5rem;
+    text-align: center;
+
+    @media (max-width: $md3+px) {
+        border-radius: 20px;
+        padding: 18px 18px 20px;
+        width: 250px;
+    }
+
+    &__img {
+        height: 34rem;
+        border: 1rem solid $lightColor;
+        margin-bottom: 3rem;
+
+        @media (max-width: $md3+px) {
+            border: 6px solid $lightColor;
+            margin-bottom: 14px;
+            height: 212px;
+        }
+    }
+
+    &__title {
+        font-size: 4rem;
+        line-height: 1.2em;
+        font-family: $titleFontFamily;
+        padding: 0 2rem;
+
+        @media (max-width: $md3+px) {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+}

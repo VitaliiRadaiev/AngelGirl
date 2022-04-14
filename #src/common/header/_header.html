@@ -1,0 +1,59 @@
+<header class="header" data-header>
+    <div class="container">
+        <div class="header__body">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="img/logo/logo.png" alt="logo">
+                </a>
+                <div class="header__decor">
+                    <img src="img/photo/header-decor.png" alt="">
+                </div>
+            </div>
+            <div class="header__menu menu">
+                <div class="menu__scroll-wrap">
+                    <ul class="menu__list">
+                        <li>
+                            <a href="#" class="menu__link"> 
+                                About AGT
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">
+                                Our NFTs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">
+                                Token
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">
+                                Roadmap
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__btn">
+                @@include('../buttons/_btn-primary.html', {
+                "text": "Buy token"
+                })
+            </div>
+            <div class="header__burger">
+                <div class="burger" data-action="toggle-menu-mobile">
+                    <span class="burger__cross"></span>
+                    <span class="burger__cross"></span>
+                    <span class="burger__cross"></span>
+                    <span class="burger__cross"></span>
+                    <div class="burger__border"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

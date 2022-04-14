@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "AngelGirl"
+})
+
+<body>
+	<div class="_preload-body"></div>
+	<!-- == TOP LINE ================== -->
+
+	@@include('common/header/_header.html',{
+	"mod": ""
+	})
+	<!-- == // TOP LINE ================== -->
+	
+	<main class="_page home-page">
+		@@include('common/promo-header/_promo-header.html')
+		
+		@@include('common/about/_about.html')
+		
+		@@include('common/carousel/_carousel.html') 
+
+	</main>
+
+	<!-- == FOOTER ================== -->
+	@@include('common/footer/_footer.html',{})
+	<!-- == // FOOTER ================== -->
+
+	@@include('_js-bottom.html',{})
+</body>
+
+</html>

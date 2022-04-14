@@ -1,0 +1,143 @@
+.promo-header {
+    @media (max-width: $md2+px) {
+        padding-bottom: 50px;
+    }
+    @media (max-width: $md3+px) {
+        padding-bottom: 25px;
+    }
+
+    &__body {
+        position: relative;
+        display: flex;
+
+        @media (max-width: $md2+px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__col-1 {
+        flex: 0 0 auto;
+        width: 64rem;
+        margin-right: 13.3rem;
+        padding-top: 23rem;
+
+        @media (max-width: $md1+px) {
+            margin-right: 2.3rem;
+        }
+
+        @media (max-width: $md2+px) {
+            margin-right: 0;
+            padding-top: 0;
+            width: 100%;
+        }
+    }
+
+    &__col-2 {
+        height: 85rem;
+        flex: 1 1 auto;
+
+        @media (max-width: $md2+px) {
+            margin-left: 114px;
+        }
+
+        @media (max-width: $md3+px) {
+            height: 360px;
+            margin-bottom: 20px;
+            margin-left: 28px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 5rem;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__title-line-1 {
+        font-weight: 400;
+        font-size: 10rem;
+        line-height: 1.45em;
+        color: $secondColor;
+        font-family: $titleFontFamily;
+
+        @media (max-width: $md3+px) {
+            font-size: 40px;
+            line-height: 58px;
+        }
+    }
+
+    &__title-line-2 {
+        font-weight: 700;
+        font-size: 10rem;
+        line-height: 1.1em;
+        color: $textColor;
+
+        @media (max-width: $md3+px) {
+            font-size: 40px;
+            line-height: 53px;
+        }
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 1.5em;
+        margin-bottom: 7.4rem;
+        max-width: 63.9rem;
+
+        @media (max-width: $md3+px) {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__buttons-group {
+        @media (max-width: $md2+px) {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 708px;
+        }
+
+        @media (max-width: $md3+px) {
+            flex-direction: column;
+        }
+
+        & > a:first-child {
+            @media (min-width: 992px) {
+                margin-right: 3rem;
+            }
+
+            @media (max-width: $md3+px) {
+                margin-bottom: 16px;
+            }
+        }
+
+        & > * {
+            @media (max-width: $md2+px) and (min-width: 768px) {
+                flex: 0 1 calc(50% - 15px);
+            }
+        }
+    }
+
+    &__img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        & img {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 96.3rem;
+            width: auto;
+
+            @media (max-width: $md3+px) {
+                height: 370px;
+            }
+        }
+    }
+}
