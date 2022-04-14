@@ -1,0 +1,200 @@
+.faq {
+    &__cloud {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        transform: translate(-32%, -37%);
+        width: 110rem;
+
+        @media (max-width: $md2+px) {
+            display: none;
+        }
+
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__decor {
+        position: absolute;
+        z-index: 4;
+
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__decor--1 {
+        top: 0;
+        right: 6.6rem;
+        transform: translateY(-50%);
+        width: 35rem;
+
+        @media (max-width: $md2+px) {
+            right: 55px;
+            width: 200px;
+            transform: translateY(-32%);
+        }
+
+        @media (max-width: $md3+px) {
+            right: 20px;
+            width: 100px;
+        }
+    }
+
+    &__decor--2 {
+        top: 28%;
+        right: 0;
+        transform: translateX(50%);
+        width: 10rem;
+
+        @media (max-width: $md3+px) {
+            width: 40px;
+        }
+    }
+
+    &__decor--3 {
+        left: 0;
+        bottom: 10%;
+        transform: translateX(-25%);
+        width: 7.4rem;
+
+        @media (max-width: $md3+px) {
+            width: 30px;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__body {
+        border-radius: 7rem;
+        background-color: $mainColor;
+        padding: 10rem 11rem 11rem;
+        color: $lightColor;
+
+        @media (max-width: $md2+px) {
+            padding: 80px;
+        }
+
+        @media (max-width: $md3+px) {
+            padding: 30px 20px;
+            border-radius: 30px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 4rem;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__list {
+        padding-left: 0;
+        margin-bottom: 0;
+
+        & > li {
+            transition: all 0.3s ease;
+            padding: 0.7rem 5rem 0.8rem;
+            background: #00aeae;
+            border-radius: 4rem;
+            min-height: 8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media (max-width: $md3+px) {
+                border-radius: 30px;
+                min-height: 64px;
+                padding: 8px 20px;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+
+                @media (max-width: $md3+px) {
+                    margin-bottom: 10px;
+                }
+            }
+
+            &.active {
+                padding: 5rem;
+                background: #019d9c;
+
+                @media (max-width: $md3+px) {
+                    padding: 20px;
+                }
+
+                & .faq__list-title {
+                    color: $hover;
+                }
+
+                & .faq__list-icon {
+                    transform: translateY(-50%) scale(1, -1);
+                }
+            }
+        }
+    }
+
+    &__list-title {
+        position: relative;
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 1.33em;
+        text-shadow: 0.33em 0.33em 0px rgba(0, 161, 161, 0.7);
+        padding-right: 2rem;
+        transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        @media (max-width: $md3+px) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        @media (min-width: 992px) {
+            &:hover {
+                color: $hover;
+            }
+        }
+
+        &:before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: calc(100% + 10rem);
+            height: 8rem;
+
+            @media (max-width: $md3+px) {
+                width: calc(100% + 40px);
+                height: 64px;
+            }
+        }
+    }
+
+    &__list-icon {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        font-size: 0.9rem;
+        transform: translateY(-50%);
+        transition: transform 0.3s ease;
+
+        @media (max-width: $md3+px) {
+            font-size: 6px;
+        }
+    }
+
+    &__list-content {
+        padding-top: 1.9rem;
+
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

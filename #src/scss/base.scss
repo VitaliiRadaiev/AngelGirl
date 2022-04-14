@@ -160,7 +160,6 @@ h4 {
 		font-size: 18px;
 		line-height: 24px;
 		text-shadow: 6px 6px 0px rgba(0, 161, 161, 0.7);
-
 	}
 }
 
@@ -431,21 +430,29 @@ figure {
 	}
 
 	& ul {
-		padding-left: 3em;
-
-		@media (max-width: $md3+px) {
-			padding-left: 1.5em;
-		}
+		padding-left: 0;
 
 		& > li {
-			list-style: disc;
+			position: relative;
+			padding-left: 1.5em;
 
 			&:not(:last-child) {
-				margin-bottom: 0.7em;
+				margin-bottom: 1.6em;
 			}
 
-			& > *:last-child {
-				margin-bottom: 0;
+			&:before {
+				position: absolute;
+				content: "";
+				width: 0.3em;
+				height: 0.3em;
+				border-radius: 50%;
+				position: absolute;
+				left: 0;
+				top: 0.8em;
+				transform: translateY(-50%);
+				background: linear-gradient(270deg, #ffd847 0%, #eac22e 100%);
+				box-shadow: 2px 2px 0px rgba(107, 89, 19, 0.1);
+				display: block;
 			}
 		}
 	}

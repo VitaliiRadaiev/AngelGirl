@@ -1,0 +1,160 @@
+.footer {
+
+    &__inner {
+        background-color: $mainColor;
+    }
+
+    &__body {
+        display: flex;
+        padding-top: 9rem;
+        padding-bottom: 10rem;
+        color: $lightColor;
+
+        @media (max-width: $md2+px) {
+            flex-wrap: wrap;
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        @media (max-width: $md3+px) {
+            display: block;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__col-1 {
+        width: 100%;
+        max-width: 39.4rem;
+        padding-right: 2rem;
+
+        @media (max-width: $md1+px) {
+            max-width: 280px;
+        }
+
+        @media (max-width: $md2+px) {
+            flex: 0 0 52%;
+            max-width: none;
+        }
+
+        @media (max-width: $md3+px) {
+            max-width: 170px;
+            margin: 0 auto 30px;
+        }
+    }
+
+    &__col-2 {
+        flex: 1 1 auto;
+        padding-right: 5rem;
+        padding-top: 1rem;
+
+        @media (max-width: $md2+px) {
+            padding-top: 0;
+            padding-right: 0;
+            flex: 0 1 48%;
+        }
+    }
+
+    &__col-3 {
+        flex: 0 0 auto;
+
+        @media (max-width: $md2+px) {
+            flex: 0 1 100%;
+            margin-top: 50px;
+        }
+
+        @media (max-width: $md3+px) {
+            margin-top: 30px;
+        }
+    }
+
+    &__logo {
+        width: 100%;
+        max-width: 37rem;
+        margin-left: -22%;
+        position: relative;
+        padding-bottom: 30%;
+
+        @media (max-width: $md3+px) {
+            padding-bottom: 40%;
+            margin-left: 0;
+        }
+
+        & img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 2.2rem;
+
+        @media (max-width: $md2+px) {
+            margin-bottom: 20px;
+            max-width: 370px;
+        }
+
+        & > li {
+            margin-bottom: 1rem;
+
+            @media (max-width: $md2+px) {
+                flex: 0 1 50%;
+                padding-right: 20px;
+                margin-bottom: 10px;
+            }
+
+            &:not(:last-child) {
+                
+                @media (min-width: 992px) {
+                    margin-right: 6rem;
+                }
+            }
+        }
+
+        & a {
+            text-shadow: 5px 5px 0px rgba(0, 161, 161, 0.7);
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 1.333em;
+            color: $lightColor;
+            white-space: nowrap;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__copy {
+        margin-right: 2rem;
+    }
+
+    &__social {
+        & .social {
+            @media (min-width: 768px) {
+                font-size: 7px;
+            }
+        }
+    }
+
+
+
+    &__btn {
+        @media (max-width: $md2+px) {
+            width: 100%;
+
+            & .btn {
+                width: 100%;
+                max-width: 340px;
+            }
+        }
+    }
+}

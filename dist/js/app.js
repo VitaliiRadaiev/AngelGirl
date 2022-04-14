@@ -575,8 +575,9 @@ window.popup = {
 						let content = trigger.nextElementSibling;
 
 						// init
-						if(trigger.classList.contains('active')) {
+						if (trigger.classList.contains('active')) {
 							content.style.display = 'block';
+							parent.classList.add('active');
 						}
 
 						trigger.addEventListener('click', (e) => {
@@ -836,25 +837,42 @@ if (videoBlock.length) {
 	}
 
 	initSmoothScroll() {
-		let anchors = document.querySelectorAll('[data-scroll]');
+		let anchors = document.querySelectorAll('a[href*="#"]:not([data-popup="open-popup"])');
 		if (anchors.length) {
+			let header = document.querySelector('.header');
+
 			anchors.forEach(anchor => {
 				if (!anchor.getAttribute('href').match(/#\w+$/gi)) return;
 
 				let id = anchor.getAttribute('href').match(/#\w+$/gi).join('').replace('#', '');
+
 				anchor.addEventListener('click', (e) => {
+					let el = document.querySelector(`#${id}`);
 
-					let el = document.getElementById(id);
-					e.preventDefault();
-					window.scrollTo({
-						top: el ? el.offsetTop : 0,
-						behavior: 'smooth',
-					})
+					if (el) {
+						e.preventDefault();
+						let top = Math.abs(document.body.getBoundingClientRect().top) + el.getBoundingClientRect().top;
 
+						if (header) {
+							top = top - header.clientHeight;
+						}
 
+						window.scrollTo({
+							top: top,
+							behavior: 'smooth',
+						})
+					} else {
+						e.preventDefault();
+						window.scrollTo({
+							top: 0,
+							behavior: 'smooth',
+						})
+					}
 				})
+
 			})
 		}
+
 	}
 
 	selectInit() {
