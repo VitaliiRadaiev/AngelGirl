@@ -14,7 +14,7 @@
 		"gulp-file-include": "latest",
 		"gulp-fonter": "latest",
 		"gulp-group-css-media-queries": "latest",
-		"gulp-imagemin": "latest",
+		"gulp-imagemin": "^8.0.0",
 		"gulp-media-queries-splitter": "latest",
 		"gulp-newer": "latest",
 		"gulp-plumber": "latest",
