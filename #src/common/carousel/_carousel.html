@@ -1,6 +1,9 @@
 <div class="carousel  padding-wrap" id="ourNFT" data-carousel>
     <div class="carousel__cloud">
-        <img src="img/photo/carousel-cloud.png" alt="">
+        <picture>
+            <source srcset="img/photo/carousel-cloud.webp" type="image/webp">
+            <img src="img/photo/carousel-cloud.png" alt="">
+        </picture>
     </div>
     <div class="container position-relative">
         <h2 class="carousel__title text-shadow-none">Our NFTs</h2>
@@ -9,18 +12,21 @@
                 <div class="swiper-slide">
                     @@include('../card/_card.html', {
                         "img": "img/photo/card-img-1.jpg",
+                        "imgWebp": "img/photo/card-img-1.webp",
                         "title": "Angel hugging cloud in tree"
                     })
                 </div>
                 <div class="swiper-slide">
                     @@include('../card/_card.html', {
                         "img": "img/photo/card-img-2.jpg",
+                        "imgWebp": "img/photo/card-img-2.webp",
                         "title": "Angel in country with fantasy"
                     })
                 </div>
                 <div class="swiper-slide">
                     @@include('../card/_card.html', {
                         "img": "img/photo/card-img-3.jpg",
+                        "imgWebp": "img/photo/card-img-3.webp",
                         "title": "Angel in the city galaxy"
                     })
                 </div>

@@ -7,14 +7,14 @@ let scss = require('gulp-sass')(require('sass'));
 let group_media = require("gulp-group-css-media-queries");
 let plumber = require("gulp-plumber");
 let del = require("del");
-//let imagemin = require("gulp-imagemin");
+// let imagemin = require("gulp-imagemin");
 let uglify = require("gulp-uglify-es").default;
 let rename = require("gulp-rename");
 let fileinclude = require("gulp-file-include");
 let clean_css = require("gulp-clean-css");
 let newer = require('gulp-newer');
 
-//let webp = require('imagemin-webp');
+// let webp = require('imagemin-webp');
 let webpcss = require("gulp-webp-css");
 let webphtml = require('gulp-webp-html');
 
@@ -220,7 +220,7 @@ exports.js = js;
 //exports.fonts_otf = fonts_otf;
 exports.fontstyle = fontstyle;
 exports.fonts = fonts;
-//exports.images = images;
+// exports.images = images;
 //exports.clean = clean;
 exports.build = build;
 exports.watch = watch;

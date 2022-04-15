@@ -837,7 +837,7 @@ if (videoBlock.length) {
 	}
 
 	initSmoothScroll() {
-		let anchors = document.querySelectorAll('a[href*="#"]:not([data-popup="open-popup"])');
+		let anchors = document.querySelectorAll('a[href^="#"]:not([data-popup="open-popup"])');
 		if (anchors.length) {
 			let header = document.querySelector('.header');
 
